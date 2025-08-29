@@ -1,44 +1,93 @@
 .contact-container {
-  display: flex;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
 }
 
-.contact-info, .contact-form {
-  flex: 1;
-  padding: 2rem;
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.contact-info {
-  border-right: 1px solid #E0E0E0;
-}
-
-.contact-info p {
+.contact-header h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
-.contact-info i {
-  margin-right: 1rem;
-  color: #007BFF;
+.contact-header p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.contact-content {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form-container, .contact-info-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px 20px;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
   font-size: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #E0E0E0;
-  border-radius: 20px;
-  transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #007BFF;
-  outline: none;
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-.error {
-  color: red;
-  font-size: 0.8rem;
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-info-container h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #007bff;
+}
+
+.info-item p {
+  font-size: 1.1rem;
+  margin: 0;
 }

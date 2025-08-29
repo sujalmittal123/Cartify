@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../contexts/CartContext';
+import { ShoppyContext } from '../contexts/ShoppyContext';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { cart } = useContext(CartContext);
+  const { cart } = useContext(ShoppyContext);
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <i className="fas fa-shopping-cart logo-icon"></i>
-          Cartify
+          <img src="/images/log.jpg" alt="Shoppy Logo" className="logo-image" />
+          Shoppy
         </Link>
         <ul className="nav-menu">
           <li className="nav-item">

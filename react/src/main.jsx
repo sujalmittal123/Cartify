@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
-import { CartProvider } from './contexts/CartContext.jsx';
+import { ShoppyProvider } from './contexts/ShoppyContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <CartProvider>
+      <ShoppyProvider>
         <App />
-      </CartProvider>
+      </ShoppyProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

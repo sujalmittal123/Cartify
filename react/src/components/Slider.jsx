@@ -3,9 +3,9 @@ import './Slider.css';
 
 const images = [
   '/images/ban1.png',
-  '/images/ban2.webp',
+  '/images/bann2.webp',
   '/images/ban3.avif',
-  '/images/ban4.webp',
+  '/images/bann4.webp',
 ];
 
 const Slider = () => {

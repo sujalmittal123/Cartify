@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
-import { CartContext } from '../contexts/CartContext';
+import { ShoppyContext } from '../contexts/ShoppyContext';
 import './ProductView.css';
 
 const ProductView = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id));
-  const { addToCart } = useContext(CartContext);
+  const { addToCart } = useContext(ShoppyContext);
 
   if (!product) {
     return <div>Product not found</div>;

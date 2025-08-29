@@ -1,8 +1,11 @@
+
 .slider-container {
   width: 100%;
-  height: 400px;
+  height: 500px; /* Increased height for a more impactful look */
   overflow: hidden;
   position: relative;
+  border-radius: 15px; /* Added border-radius for a softer look */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Added a subtle shadow */
 }
 
 .slide {
@@ -11,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out; /* Smoother transition */
 }
 
 .slide img {

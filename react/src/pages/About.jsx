@@ -9,14 +9,14 @@ const About = () => {
           <img src="/images/about.jpg" alt="About Us" />
         </div>
         <div className="about-text">
-          <h2>About Cartify</h2>
+          <h2>About Shoppy</h2>
           <p>
-            Welcome to Cartify, your number one source for all things products.
+            Welcome to Shoppy, your number one source for all things products.
             We're dedicated to giving you the very best of products, with a focus
             on dependability, customer service and uniqueness.
           </p>
           <p>
-            Founded in 2025, Cartify has come a long way from its beginnings.
+            Founded in 2025, Shoppy has come a long way from its beginnings.
             When we first started out, our passion for providing the best
             equipment for our fellow merchants drove us to do intense research,
             and gave us the impetus to turn hard work and inspiration into to a

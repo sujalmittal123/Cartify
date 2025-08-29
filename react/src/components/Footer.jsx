@@ -3,110 +3,36 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <section className="footer-subscription">
-       
-       
-        <div className="input-areas">
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-section about">
+          <h2 className="footer-logo-text">Shoppy</h2>
+          <p>
+            Your one-stop shop for all things amazing. We are dedicated to providing the best products and services to our customers.
+          </p>
+        </div>
+        <div className="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div className="footer-section contact-form">
+          <h2>Contact Us</h2>
           <form>
-            <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Your Email"
-            />
-            <button className="btn--outline">Subscribe</button>
+            <input type="email" name="email" className="text-input contact-input" placeholder="Your email address..." />
+            <textarea name="message" className="text-input contact-input" placeholder="Your message..."></textarea>
+            <button type="submit" className="btn btn-primary">Send</button>
           </form>
         </div>
-      </section>
-      <div className="footer-links">
-        <div className="footer-link-wrapper">
-          <div className="footer-link-items">
-            <h2>About Us</h2>
-            <a href="/about">How it works</a>
-            <a href="/">Testimonials</a>
-            <a href="/">Careers</a>
-            <a href="/">Investors</a>
-            <a href="/">Terms of Service</a>
-          </div>
-          <div className="footer-link-items">
-            <h2>Contact Us</h2>
-            <a href="/contact">Contact</a>
-            <a href="/">Support</a>
-            <a href="/">Destinations</a>
-            <a href="/">Sponsorships</a>
-          </div>
-        </div>
-        <div className="footer-link-wrapper">
-          <div className="footer-link-items">
-            <h2>Videos</h2>
-            <a href="/">Submit Video</a>
-            <a href="/">Ambassadors</a>
-            <a href="/">Agency</a>
-            <a href="/">Influencer</a>
-          </div>
-          <div className="footer-link-items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a>
-            <a href="/">Facebook</a>
-            <a href="/">Youtube</a>
-            <a href="/">Twitter</a>
-          </div>
-        </div>
       </div>
-      <section className="social-media">
-        <div className="social-media-wrap">
-          <div className="footer-logo">
-            <a href="/" className="social-logo">
-              Cartify
-            </a>
-          </div>
-          <small className="website-rights">Cartify © 2025</small>
-          <div className="social-icons">
-            <a
-              className="social-icon-link facebook"
-              href="/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <i className="fab fa-facebook-f" />
-            </a>
-            <a
-              className="social-icon-link instagram"
-              href="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i className="fab fa-instagram" />
-            </a>
-            <a
-              className="social-icon-link youtube"
-              href="/"
-              target="_blank"
-              aria-label="Youtube"
-            >
-              <i className="fab fa-youtube" />
-            </a>
-            <a
-              className="social-icon-link twitter"
-              href="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i className="fab fa-twitter" />
-            </a>
-            <a
-              className="social-icon-link twitter"
-              href="/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i className="fab fa-linkedin" />
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+      <div className="footer-bottom">
+        &copy; {new Date().getFullYear()} Shoppy | Designed by You
+      </div>
+    </footer>
   );
 };
 

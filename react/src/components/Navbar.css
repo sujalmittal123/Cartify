@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(90deg, #007BFF 0%, #0056b3 100%);
+  background-color: #ffffff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
@@ -17,11 +18,11 @@
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1300px;
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #333;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -29,7 +30,7 @@
   display: flex;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .nav-menu {
@@ -44,17 +45,19 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: #333;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+  color: #007BFF;
+  border-bottom: 4px solid #007BFF;
 }
 
 .nav-icons {
@@ -63,13 +66,20 @@
 }
 
 .nav-icon {
-  color: #fff;
+  color: #333;
   margin: 0 1rem;
   font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-.logo-icon {
+.nav-icon:hover {
+  color: #007BFF;
+}
+
+.logo-image {
   margin-right: 0.5rem;
+  width: 40px;
+  height: 40px;
 }
 
 .cart-icon {
@@ -80,7 +90,7 @@
   position: absolute;
   top: -8px;
   right: -8px;
-  background-color: red;
+  background-color: #007BFF;
   color: white;
   width: 20px;
   height: 20px;

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../contexts/CartContext';
+import { ShoppyContext } from '../contexts/ShoppyContext';
 import { Link } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {
-  const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
+  const { cart, removeFromCart, updateQuantity } = useContext(ShoppyContext);
 
   const totalAmount = cart.reduce(
     (total, item) => total + item.price * item.quantity,
